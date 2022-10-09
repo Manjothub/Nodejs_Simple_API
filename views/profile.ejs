@@ -7,6 +7,13 @@
     <title>Profile Page</title>
 </head>
 <body>
-    <h1>This is Profile Page from Express JS</h1>
+    <h1>Welcome, <%= user.name %></h1>
+    <h3><%= user.email %></h3>
+    <h3><%= user.country %></h3>
+    <ul>
+        <% user.skills.forEach((item)=>{ %>
+            <li><%= item %></li>
+        <% })%>
+    </ul>
 </body>
 </html>
