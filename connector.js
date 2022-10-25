@@ -24,8 +24,11 @@ app.get('/profile',(_,resp)=>{
         name:'Peter',
         email:'peter@test.com',
         country:'USA',
-        skills:['php','js']
+        skills:['php','js','java',]
     }
     resp.render('profile',{user});
+})
+app.get('/login',(_,resp)=>{
+    resp.render('login');
 })
 app.listen(3000);
